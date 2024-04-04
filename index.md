@@ -10,7 +10,7 @@
 
  Labs         | Links 
  ------:       | ------: 
- Lab #1       | **[`Remote Access and FileSystem`](https://www.google.com/)**
+ Lab #1       | **[`Remote Access and FileSystem`](https://castle60.github.io/CSE15L-Lab-Reports/Lab1.html)**
  Lab #2       |  
  Lab #3       | 
  Lab #4       | 
@@ -18,4 +18,4 @@
  
 ----
 
-> Nature fanatic? Visit the *[gallery](main/CSE15L-Lab-Reports/gallery.md)*
+> Nature fanatic? Visit the *[gallery](https://castle60.github.io/CSE15L-Lab-Reports/gallery.html)*
