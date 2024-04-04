@@ -174,6 +174,7 @@ $ ls /workspaces/lecture1/messages/ru.txt
   When a file is provided as the argument to list, `ls` frankly prints the path that was provided as the argument. This is due to the datum that a file does not contain a child object as a directory would.
 
   ***There are no errors with this output.***
+  
 ------
 
 ```bash
@@ -191,6 +192,8 @@ $ ls
   Disregarding the arguments, `ls` as a standalone command will print the identifying information (listed two examples above) of the *current working directory*.
 
   Alas, when `ls` was executed while the current working directory was `/workspaces/lecture1/messages`, the child objects storaged within and their identifying information was printed to the terminal.
+
+  ***There are no errors with this output.***
 
 
 
