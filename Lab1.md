@@ -29,7 +29,7 @@ $ cd /workspaces/lecture1/messages
      ***There are no errors with this output.***
 
 
----
+------
 
 ```bash
 $ cd /workspaces/lecture1/Hello.java
@@ -51,7 +51,7 @@ $ cd /workspaces/lecture1/Hello.java
     ***There is 1 error with this output. &ndash;*** The formal syntax for `cd` is `cd <path>`, where `<path>` must be supplemented with either a relative or absolute path to some directory; `Hello.java` is not a directory.
 
 
----
+------
 
 ```bash
 $ cd
@@ -72,7 +72,7 @@ $ cd
 
   ***There are no errors with this output.***
 
----
+------
 
 - #### Using `cat` &rarr; *"Concatenate"*
 
@@ -88,29 +88,109 @@ $ cat /workspaces/lecture1/messages
 - ##### NEW WORKING DIRECTORY: `None`
 - ##### EXPLANATION:
 
-  
+  `cat` is a terminal command that takes two arguments, with the second argument being customary. Its responsibility is to transmute the given file(s) in the arguments and *concatenate*, or print, their contents.
+
+  Under the current circumstance, the path that was imparted was that of a directory; `cat` **cannot articulate the contents of a directory, as it harbors multiple objects and would prove inconvenient to disregard specificity.**
+
+  ***There is 1 error with this output. &ndash;*** `cat` takes paths to files as an argument to properly parse its contents. `/workspaces/lecture1/messages` is a path to a directory. 
+
+------
 
 ```bash
 $ cat /workspaces/lecture1/messages/ru.txt /workspaces/lecture1/messages/en-us.txt
 ```
+- ##### OUTPUT:
+  ```yaml
+  @Castle60 ➜ /workspaces/lecture1 (main) $ cat /workspaces/lecture1/messages/ru.txt /workspaces/lecture1/messages/en-us.txt
+  Привет, мир!Hello World!
+  ```
+- ##### PRIOR WORKING DIRECTORY: `/workspaces/lecture1`
+- ##### NEW WORKING DIRECTORY: `None`
+- ##### EXPLANATION:
+
+  Here, I imparted two arguments whose contents I want to parse and concatenate. Since `ru.txt` and `en-us.txt` are both feasible file types and not directories, the expected and evident output was the contents of both files stringed (concatenated) together with no special formatting.
+
+  ***There are no errors with this output.***
+  
+------
 
 ```bash
 $ cat
 ```
+- ##### OUTPUT:
+  ```yaml
+  @Castle60 ➜ /workspaces/lecture1 (main) $ cat
+  Hi World! # User Input
+  Hi World!
+  Lorem Ipsum # User Input
+  Lorem Ipsum
+  ```
+- ##### PRIOR WORKING DIRECTORY: `/workspaces/lecture1`
+- ##### NEW WORKING DIRECTORY: `None`
+- ##### EXPLANATION:
+
+  `cat` with no arguments imparted serve as a method of inputting information to the terminal, and retrieving its printed contents as output.
+
+  While it appears impractical to absolve any arguments provided this definition, using `cat` with no arguments can be resourceful when transmuting data with other commands.
+
+  ***There are no errors with this output.***
+  
+------
 
 - #### Using `ls` &rarr; *"List"*
 
 ```bash
 $ ls /workspaces/lecture1
 ```
+- ##### OUTPUT:
+  ```yaml
+  @Castle60 ➜ /workspaces/lecture1 (main) $ ls /workspaces/lecture1
+  Hello.class  Hello.java  README  messages
+  ```
+- ##### PRIOR WORKING DIRECTORY: `/workspaces/lecture1`
+- ##### NEW WORKING DIRECTORY: `None`
+- ##### EXPLANATION:
+
+  Another intuitive command that's applied ubiquitously is `ls`. This command takes a *path to a directory* as an argument, and prints any identifying information: the names of its corresponding child objects and their extensions (if it is a file).
+
+  In this demonstration, I provided the absolute path `/workspaces/lecture1`. The outcome is the names of each file, their appropriate extensions, and the name of the `messages` directory.
+
+  ***There are no errors with this output.***
+  
+------
 
 ```bash
 $ ls /workspaces/lecture1/messages/ru.txt
 ```
+- ##### OUTPUT:
+  ```yaml
+  @Castle60 ➜ /workspaces/lecture1/messages (main) $ ls /workspaces/lecture1/messages/ru.txt
+  /workspaces/lecture1/messages/ru.txt
+  ```
+- ##### PRIOR WORKING DIRECTORY: `/workspaces/lecture1/messages`
+- ##### NEW WORKING DIRECTORY: `None`
+- ##### EXPLANATION:
+
+  When a file is provided as the argument to list, `ls` frankly prints the path that was provided as the argument. This is due to the datum that a file does not contain a child object as a directory would.
+
+  ***There are no errors with this output.***
+------
 
 ```bash
 $ ls
 ```
+- ##### OUTPUT:
+  ```yaml
+  @Castle60 ➜ /workspaces/lecture1/messages (main) $ ls
+  en-us.txt  es-mx.txt  ru.txt  zh-cn.txt
+  ```
+- ##### PRIOR WORKING DIRECTORY: `/workspaces/lecture1/messages`
+- ##### NEW WORKING DIRECTORY: `None`
+- ##### EXPLANATION:
+
+  Disregarding the arguments, `ls` as a standalone command will print the identifying information (listed two examples above) of the *current working directory*.
+
+  Alas, when `ls` was executed while the current working directory was `/workspaces/lecture1/messages`, the child objects storaged within and their identifying information was printed to the terminal.
 
 
 
