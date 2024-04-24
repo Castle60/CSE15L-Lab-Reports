@@ -1,8 +1,13 @@
-## Lab Report No. 2 &mdash; Web Servers & Secure Shell
+# Lab Report No. 2 &mdash; Web Servers & Secure Shell
 
-> #### *"This laboratory report's itinerary: consult the Java Runtime Environment in inaugurating a linked connection to a chat web server; generate private and public authentication tokens via `ssh` (Secure Shell) to effortlessly connect to a remote server."*
+> #### *"This laboratory report's itinerary: consult the bash terminal in inaugurating a linked connection to a chat web server implemented in Java; generate private and public authentication tokens via `ssh` (Secure Shell) to effortlessly connect to a remote server."*
 
-### <ins>Chat Server Program</ins>
+## <ins>Part 1 &ndash; Implementation & Server Startup</ins>
+
+------
+
+### Chat Server Code
+  
 ```java
 import java.io.IOException;
 import java.net.URI;
@@ -39,3 +44,14 @@ class ChatServer {
     }
 }
 ```
+
+------
+
+### Usage Cases
+
+1. **Initial Use**
+![Matt's Statement](../ChatServer_1.png)
+
+2. **Second Use**
+![Sky's Statement](../ChatServer_2.png)
+
