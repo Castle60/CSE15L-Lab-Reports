@@ -105,3 +105,13 @@ class ChatServer {
 - The pleasantry of token authentication *(no password inquired)*
   - ![Remote Server Connection](./Remote-Server-Encounter-1.png)
 
+------
+
+## <ins>Part 3 &ndash; Summative Synthesis</ins>
+
+Software techniques, concepts, and tools that I would come to be assimilated with throughout the span of the first processions of labs would be sought resourceful in any ensuing personal/academic projects, assignments, portfolios, or interviews. One such tool, a testing framework entitled *JUnit*, was introduced in the course and I have developed a cordial relationship with it due to its test-efficient deliverables of various testing methods *(assertEquals(), assertArrayEquals(), ...)*.
+
+A second concept of prior unfamiliarity, but would eventually become adapted into my skillset, is the concept of establishing remote links to some web server in the ether; such a web server is proven pragmatic when the scenario of data analysis, for instance, is introduced.
+
+
+
