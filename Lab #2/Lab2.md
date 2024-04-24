@@ -50,8 +50,8 @@ class ChatServer {
 ### Usage Cases
 
 1. **Initial Use**
-![Matt's Statement](../ChatServer_1.png)
+![Matt's Statement](./Lab\#2/ChatServer_1.png)
 
 2. **Second Use**
-![Sky's Statement](../ChatServer_2.png)
+![Sky's Statement](./Lab\#2/ChatServer_2.png)
 
