@@ -103,5 +103,5 @@ class ChatServer {
   - ![Public SSH Key](./SSH-Key-Pub.png)
 
 - The pleasantry of token authentication *(no password inquired)*
-  - ![Remote Server Connection](./Remote-Server-Encounter.png)
+  - ![Remote Server Connection](./Remote-Server-Encounter-1.png)
 
