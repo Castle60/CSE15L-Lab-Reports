@@ -14,7 +14,7 @@
  Lab #2       | **[`Web Servers & Secure Shell`](https://castle60.github.io/CSE15L-Lab-Reports/Lab_2/Lab2.html)**
  Lab #3       | **[`Bugs & Bash Commands`](https://castle60.github.io/CSE15L-Lab-Reports/Lab_3/Lab3.html)**
  Lab #4       | **[`Vi-IMproved (VIM)`](https://castle60.github.io/CSE15L-Lab-Reports/Lab_4/Lab4.html)**
- Lab #5       | 
+ Lab #5       | **[`Wrapping Up`](https://castle60.github.io/CSE15L-Lab-Reports/Lab_5/Lab5.html)**
  
 ----
 
