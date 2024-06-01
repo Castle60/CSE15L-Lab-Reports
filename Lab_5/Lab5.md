@@ -41,11 +41,11 @@ class RangeIterator implements Iterator<Integer> {
 // ...
   public Integer next() {
        // The content of this line was originally absolved; here I am storing a shallow copy of currentValue.
-       int current = currentValue; 
+       int current = currentValue;
+       // Incremented the currentValue field so that on the next invocation, the value will be updated.
        currentValue++;
-// Incremented the currentValue field so that on the next invocation, the value will be updated.
-       return current;
        // Returning the current value in the range. Before, I was returning the immediate successor.
+       return current;
    }
 }
 ```
