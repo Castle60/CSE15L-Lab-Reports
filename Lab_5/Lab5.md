@@ -11,7 +11,7 @@
 ##### Student:
 > *"Hello. I can't seem to achieve the necessary outcome of the class `ConvertToRadians`. I know that it is intended to return the radian value of a degree from range `low` (inclusive) to `high` (exclusive), but its output is erroneous.. it begins at 16 even though the `low` is 15. Furthermore, it is including 31 in the output for some mystic reason. Perhaps I am precluding something? Maybe incorrectly retrieving the values? I am not sure.. I ran `javac Range.java`, followed with `java Main 15 30` to compile and run the program; the symptom is visible below."*
 
-Image
+![Symptom](Symptom.png)
 
 ##### TA:
 > *"After taking a brief glance at the symptom of your bug, it appears that your `low` argument is illogically selected by the program, despite your input of 15. This dilemma would also justify the program including 31 in the output as well: Have you traced over the iterator's retrieval operations that you implemented in the `Range` class to solidify its anticipated performance?*"
@@ -19,7 +19,11 @@ Image
 ##### Student:
 > *"Thanks! Turns out the bug was nestled within the `next()` method inside my `RangeIterator` class. `next()` was immediately returning the successor of the first value from `low` - disregarding the value of low itself. This bug had also paid a toll on the `high` value: since the iterator started at one value past `low`, the 'new' `high` became 31.*"
 
-- Bugged
+- Amended Terminal Output
+
+ ![Output](Correct-Output.png)
+
+- Bugged Version
 
  ```java
 class RangeIterator implements Iterator<Integer> {
@@ -30,7 +34,7 @@ class RangeIterator implements Iterator<Integer> {
    }
 }
 ```
-- Debugged
+- Debugged Version
 
  ```java
 class RangeIterator implements Iterator<Integer> {
@@ -43,3 +47,8 @@ class RangeIterator implements Iterator<Integer> {
 }
 ```
 
+-----
+
+## Part II &ndash; Second Appointed Reflection
+
+These past former lab sessions have been definitively insightful and educational. To speak candidly, creating Bash scripts through a series of UNIX commands has been an adventurous expedition; one in which I intend on prolonging so that my wanderlust in scripting grows higher. During a former lab activity, I was burdened with writing an autograding script for Java using Bash. Nonetheless, the autograder project has emboldened me to ponder differently about the domain of scripting.
